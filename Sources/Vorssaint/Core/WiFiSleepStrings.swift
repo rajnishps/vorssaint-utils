@@ -24,11 +24,13 @@ extension FeatureStrings {
         case .tr: return .tr
         case .ru: return .ru
         case .es: return .es
+        case .sk: return .sk
         case .de: return .de
         case .fr: return .fr
         case .it: return .it
         case .ja: return .ja
         case .ko: return .ko
+        case .uk: return .uk
         case .zhHans: return .zhHans
         case .zhTW: return .zhTW
         case .zhHK: return .zhHK
@@ -87,6 +89,16 @@ extension WiFiSleepStrings {
         unsupported: "Este Mac no tiene adaptador Wi-Fi."
     )
 
+    static let sk = WiFiSleepStrings(
+        pageTitle: "Wi-Fi v spánku",
+        hubDescription: "Vypne Wi-Fi, kým Mac spí, aby zatvorený laptop nebol viditeľný v sieťach, ktoré nevyužíva.",
+        enable: "Vypnúť Wi-Fi, keď Mac zaspí",
+        enableCaption: "Wi-Fi, ktoré bolo vypnuté už pred spánkom, sa nemení a po prebudení ostane vypnuté.",
+        restoreToggle: "Znova zapnúť Wi-Fi pri prebudení Macu",
+        restoreCaption: "Iba ak ho vypol Vorssaint.",
+        unsupported: "Tento Mac nemá Wi-Fi adaptér."
+    )
+
     static let de = WiFiSleepStrings(
         pageTitle: "WLAN im Ruhezustand",
         hubDescription: "Schaltet das WLAN aus, während der Mac schläft, damit ein geschlossenes Laptop in Netzwerken, die es nicht nutzt, unsichtbar bleibt.",
@@ -135,6 +147,16 @@ extension WiFiSleepStrings {
         restoreToggle: "Mac이 깨어나면 Wi-Fi 다시 켜기",
         restoreCaption: "Vorssaint가 껐을 때만 다시 켭니다.",
         unsupported: "이 Mac에는 Wi-Fi 어댑터가 없습니다."
+    )
+
+    static let uk = WiFiSleepStrings(
+        pageTitle: "Wi-Fi під час сну",
+        hubDescription: "Вимикає Wi-Fi, поки Mac спить, щоб закритий ноутбук не світився в мережах, якими не користується.",
+        enable: "Вимикати Wi-Fi, коли Mac засинає",
+        enableCaption: "Wi-Fi, вимкнений до сну, не чіпається й залишається вимкненим після пробудження.",
+        restoreToggle: "Ввімкнути Wi-Fi назад, коли Mac прокидається",
+        restoreCaption: "Лише коли Vorssaint сам його вимкнув.",
+        unsupported: "На цьому Mac немає Wi-Fi адаптера."
     )
 
     static let zhHans = WiFiSleepStrings(
